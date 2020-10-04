@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Data and Answers",
+  "description": "This extension adds interactive charts for Chartio tables allowing you to explore data distribution, outliers and correlations.",
+  "version": "0.1",
+
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["driver.js"]
+    , "persistent": false
+  },
+  "web_accessible_resources": [
+    "styles/vendor/dc.min.css",
+    "styles/vendor/d3-tip.css",
+    "styles/vendor/jquery.popdown.css",
+    "styles/framework.css"
+  ],
+  "browser_action": {
+    "default_icon": "chartio.png"
+  }
+
+}
